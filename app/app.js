@@ -4,6 +4,21 @@ import {StatusBar} from 'ionic-native';
 import {TabsPage} from './pages/tabs/tabs';
 
 angular.module('starter', ['ionic', 'ngCordova'])
+.config(function($stateProvider, $urlRouterProvider) {
+
+.controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
+});
+
+  $stateProvider
+  .state('map', {
+    url: '/',
+    templateUrl: 'templates/map.html',
+    controller: 'MapCtrl'
+  });
+
+  $urlRouterProvider.otherwise("/");
+
+})
 
 @App({
   template: '<ion-nav [root]="rootPage"></ion-nav>',

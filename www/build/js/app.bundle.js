@@ -20,7 +20,16 @@ var _tabs = require('./pages/tabs/tabs');
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-angular.module('starter', ['ionic', 'ngCordova']);
+angular.module('starter', ['ionic', 'ngCordova']).config(function ($stateProvider, $urlRouterProvider) {
+
+  $stateProvider.state('map', {
+    url: '/',
+    templateUrl: 'templates/map.html',
+    controller: 'MapCtrl'
+  });
+
+  $urlRouterProvider.otherwise("/");
+});
 
 // http://ionicframework.com/docs/v2/api/config/Config/
 var MyApp = exports.MyApp = (_dec = (0, _ionicAngular.App)({
