@@ -1,4 +1,9 @@
 {
   "name": "ionic-tagr",
+<<<<<<< HEAD
   "app_id": ""
+=======
+  "app_id": "",
+  "v2": true
+>>>>>>> d276bdf4d876842c09501daa155a0333c1d2913f
 }
