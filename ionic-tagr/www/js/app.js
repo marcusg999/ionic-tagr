@@ -9,7 +9,7 @@ export class AppCmp {
   constructor(platform: Platform) {
     this.platform = platform;
     this.initializeApp();
-    this.root = HomeCmp;
+    this.root = MapPage;
   }
 
   initializeApp(){
