@@ -1,4 +1,4 @@
-import {App, platform, StatusBar} from ' ionic/ionic';
+import {App, platform, StatusBar} from 'ionic/ionic';
 import {MapPage} from './map/map';
 
 @App({

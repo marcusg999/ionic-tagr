@@ -1,5 +1,8 @@
 import {page} from 'ionic/ionic'
 @page({
-  templateUrl: 'app/map/map.html'
-
+  templateUrl: 'map/map.html',
 })
+
+export class MapPage {
+  constructor() {}
+}
