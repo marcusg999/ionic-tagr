@@ -1,5 +1,5 @@
 import {App, platform, StatusBar} from 'ionic/ionic';
-import {MapPage} from 'map/map';
+import {MapPage} from './map/map';
 
 @App({
     template: '<ion-view [root]="root"></ion-nav',
